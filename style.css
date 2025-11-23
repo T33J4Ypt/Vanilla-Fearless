@@ -1,0 +1,121 @@
+/* Fundo tropical estilo Bahamas */
+body {
+  background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ffffcc;
+  text-align: center;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Título principal */
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #ffee88;
+  text-shadow: 2px 2px 4px #000;
+}
+
+/* Tabela geral */
+table {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto 30px auto;
+  border-collapse: collapse;
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px #000;
+}
+
+th, td {
+  padding: 12px 15px;
+  border: 1px solid #ffffff44;
+  text-align: center;
+  color: #fff;
+}
+
+th {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+input[type="number"] {
+  width: 70px;
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  text-align: center;
+  background-color: #333;
+  color: #fff;
+  font-size: 16px;
+}
+
+/* Botões principais (botão calcular e botões navegação) */
+button,
+a.button-link {
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 2px 2px 6px #000;
+  transition: transform 0.2s ease;
+  margin-top: 20px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: bold;
+  color: #000;
+  background-color: #ffcc00;
+}
+
+button:hover,
+a.button-link:hover {
+  transform: scale(1.05);
+  background-color: #ffee55;
+}
+
+/* Estilo específico para o botão verde da página lavagem */
+a.button-link.green {
+  background-color: #28a745;
+  color: white;
+  box-shadow: 2px 2px 6px #000;
+}
+
+a.button-link.green:hover {
+  background-color: #3fc759;
+  transform: scale(1.05);
+}
+
+/* Total exibido abaixo da calculadora */
+#total {
+  margin-top: 20px;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px #000;
+}
+
+/* Links comuns */
+a {
+  color: #ffff99;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsivo */
+@media screen and (max-width: 600px) {
+  table, input, th, td {
+    font-size: 0.85rem;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+}
