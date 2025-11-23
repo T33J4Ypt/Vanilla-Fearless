@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Lavagem de Dinheiro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Calculadora de Lavagem</h1>
+
+  <a href="index.html" style="color: #ffff99; font-weight: bold; text-decoration: underline;">
+    ← Voltar para Calculadora Bahamas
+  </a>
+
+  <table>
+    <tr>
+      <th>Dinheiro Sujo</th>
+      <td><input type="number" id="dinheiroSujo" placeholder="Ex: 10000"></td>
+    </tr>
+    <tr>
+      <th>% que queres receber no total (Tu + Máquina)</th>
+      <td><input type="number" id="percentagemEntrega" placeholder="Ex: 20"></td>
+    </tr>
+  </table>
+
+  <button onclick="calcularLavagem()">Calcular</button>
+
+  <div id="resultado"></div>
+
+  <script>
+    function calcularLavagem() {
+      const dinheiroSujo = Number(document.getElementById("dinheiroSujo").value);
+      const percentagemDesejada = Number(document.getElementById("percentagemEntrega").value); // quanto queres no total (tu + máquina)
+      const taxaMaquina = 5; // 5% fixo
+
+      if (
+        dinheiroSujo <= 0 ||
+        percentagemDesejada < taxaMaquina ||
+        percentagemDesejada > 100
+      ) {
+        document.getElementById("resultado").innerHTML =
+          "Insira um valor válido entre 5% e 100%.";
+        return;
+      }
+
+      // Cálculos
+      const valorTotalRecebido = dinheiroSujo * (percentagemDesejada / 100); // tu + máquina
+      const valorMaquina = dinheiroSujo * (taxaMaquina / 100); // máquina
+      const valorVoce = valorTotalRecebido - valorMaquina; // só tu
+      const valorEntregue = dinheiroSujo - valorTotalRecebido; // quem entregou
+
+      // Mostrar resultados formatados
+      document.getElementById("resultado").innerHTML = `
+        <br>
+        <strong>Dinheiro sujo:</strong> €${dinheiroSujo.toFixed(2)}<br>
+        <strong>Máquina (5%):</strong> €${valorMaquina.toFixed(2)}<br>
+        <strong>Você (resto dos ${percentagemDesejada}%):</strong> €${valorVoce.toFixed(2)}<br>
+        <strong>Total que você e a máquina recebem:</strong> €${valorTotalRecebido.toFixed(2)} (${percentagemDesejada}%)<br>
+        <strong>Valor entregue a quem trouxe:</strong> €${valorEntregue.toFixed(2)} (${(100 - percentagemDesejada).toFixed(2)}%)
+      `;
+    }
+  </script>
+</body>
+</html>
