@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Bahamas</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Bahamas</h1>
+
+  <label>
+    Tipo de Parceria:
+    <select id="parceria">
+      <option value="min">Com Parceria</option>
+      <option value="max">Sem Parceria</option>
+    </select>
+  </label>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Descrição</th>
+        <th>Quantidade</th>
+      </tr>
+    </thead>
+    <tbody id="tabela">
+      <tr><td>Fanta</td><td><input type="number" min="0" value="0" data-min="230" data-max="260"></td></tr>
+      <tr><td>Cola</td><td><input type="number" min="0" value="0" data-min="230" data-max="260"></td></tr>
+      <tr><td>Ice Tea</td><td><input type="number" min="0" value="0" data-min="230" data-max="260"></td></tr>
+      <tr><td>Hamburger</td><td><input type="number" min="0" value="0" data-min="380" data-max="410"></td></tr>
+      <tr><td>Francesinha</td><td><input type="number" min="0" value="0" data-min="480" data-max="510"></td></tr>
+      <tr><td>Sardinha Assada</td><td><input type="number" min="0" value="0" data-min="480" data-max="510"></td></tr>
+      <tr><td>Sardinha Enlatada</td><td><input type="number" min="0" value="0" data-min="290" data-max="320"></td></tr>
+      <tr><td>Robalo Recheado</td><td><input type="number" min="0" value="0" data-min="820" data-max="850"></td></tr>
+      <tr><td>Burrito</td><td><input type="number" min="0" value="0" data-min="820" data-max="850"></td></tr>
+      <tr><td>Drena</td><td><input type="number" min="0" value="0" data-min="2000" data-max="2500"></td></tr>
+      <tr><td>Bebidas</td><td><input type="number" min="0" value="0" data-min="350" data-max="350"></td></tr>
+    </tbody>
+  </table>
+
+  <button onclick="calcular()">Calcular Total</button>
+
+  <div id="total">Total: €0</div>
+
+  <!-- Link para página de fabricação -->
+  <div style="margin-top: 30px;">
+    <a href="fabricacao.html" style="color: #ffff99; font-weight: bold; text-decoration: underline;">
+      Ver Ingredientes e Fabricação →
+    </a>
+  </div>
+
+  <!-- Link para lavagem de dinheiro -->
+  <div style="margin-top: 10px;">
+    <a href="lavagem.html" style="color: #ffff99; font-weight: bold; text-decoration: underline;">
+      Aceder à Lavagem →
+    </a>
+  </div>
+  
+  <!-- ✅ Link para a página de armas -->
+<div style="margin-top: 30px;">
+  <a href="armas.html" style="color: #ffff99; font-weight: bold; text-decoration: underline;">
+    Ver Tabela de Armas →
+  </a>
+</div>
+
+<!-- ✅ Link para a página de balas, coletes e attachs -->
+<div style="margin-top: 30px;">
+  <a href="balas.html" style="color: #ffff99; font-weight: bold; text-decoration: underline;">
+    Ver Balas, Coletes e Attachs →
+  </a>
+</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
