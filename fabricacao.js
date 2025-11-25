@@ -84,7 +84,7 @@ const receitas = [
     ingredientes: {
       "Frascos": 2,
       "Acetonas": 4,
-      "Ópios": 8
+      "Ópios": 4
     }
   }
 ];
