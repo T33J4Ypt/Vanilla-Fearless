@@ -1,4 +1,4 @@
-const receitas = [
+const materiais = [
   {
     nome: "Berbequim",
     producao: 1,
