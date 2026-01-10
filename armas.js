@@ -1,95 +1,95 @@
 const receitas = [
   {
-    nome: "Sardinha Assada",
-    producao: 3,
-    ingredientes: {
-      "Tábuas": 2,
-      "Sardinhas Limpas": 6
-    }
-  },
-  {
-    nome: "Sardinha Enlatada",
+    nome: "Berbequim",
     producao: 1,
     ingredientes: {
-      "Sardinhas Limpas": 1,
-      "Latas": 1
+      "Aço": 10,
+      "Ferro": 50
     }
   },
   {
-    nome: "Robalo Recheado",
+    nome: "Drill",
     producao: 1,
     ingredientes: {
-      "Tábuas": 1,
-      "Robalos Limpos": 1,
-      "Batatas": 2
+      "Aço": 10,
+      "Ferro": 50
     }
   },
   {
-    nome: "Burrito",
+    nome: "Small C4",
     producao: 1,
     ingredientes: {
-      "Carnes Limpas": 1,
-      "Tábuas": 1,
-      "Pães": 2
+      "Pólvora": 10,
+      "Plástico": 20
     }
   },
   {
-    nome: "Hamburger",
-    producao: 2,
+    nome: "Hack Device",
+    producao: 1,
     ingredientes: {
-      "Pães": 2,
-      "Tábuas": 2,
-      "Carnes": 4
+      "Alumínio": 5,
+      "Plástico": 10
     }
   },
   {
-    nome: "Francesinha",
-    producao: 2,
+    nome: "Gas Tank",
+    producao: 1,
     ingredientes: {
-      "Pães": 2,
-      "Carnes": 4,
-      "Batatas": 4
+      "Plástico": 10,
+      "Enxofre": 10,
+      "Ferro": 25
     }
   },
   {
-    nome: "Ice Tea",
-    producao: 2,
+    nome: "Signal Booster",
+    producao: 1,
     ingredientes: {
-      "Chá": 1,
-      "Latas": 2,
-      "Águas": 2
+      "Alumínio": 5,
+      "Plástico": 10
     }
   },
   {
-    nome: "Cola",
-    producao: 2,
+    nome: "Portable Welding Machine",
+    producao: 1,
     ingredientes: {
-      "Café": 1,
-      "Latas": 2,
-      "Águas": 2
+      "Carvão": 10,
+      "Ferro": 20
     }
   },
   {
-    nome: "Fanta",
-    producao: 2,
+    nome: "Safe Cracker",
+    producao: 1,
     ingredientes: {
-      "Laranja": 1,
-      "Latas": 2,
-      "Águas": 2
+      "Ferro": 5,
+      "Aço": 30
     }
   },
   {
-    nome: "Drena",
-    producao: 2,
+    nome: "Glass Cutter",
+    producao: 1,
     ingredientes: {
-      "Frascos": 2,
-      "Acetonas": 4,
-      "Ópios": 4
+      "Aço": 40
+    }
+  },
+  {
+    nome: "Laptop",
+    producao: 1,
+    ingredientes: {
+      "Alumínio": 10,
+      "Plástico": 20
+      }
+  },
+  {
+    nome: "Thermite Bomb",
+    producao: 1,
+    ingredientes: {
+      "Pólvora": 5,
+      "Plástico": 20
     }
   }
 ];
 
-const tabela = document.getElementById("tabela-fabricacao");
+const tabela = document.getElementById("tabela-armas");
 
 receitas.forEach((r, i) => {
   const tr = document.createElement("tr");
