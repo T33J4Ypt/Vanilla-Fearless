@@ -89,9 +89,9 @@ const receitas = [
   }
 ];
 
-const tabela = document.getElementById("tabela-armas");
+const tabela = document.getElementById("tabela-assaltos");
 
-receitas.forEach((r, i) => {
+materiais.forEach((r, i) => {
   const tr = document.createElement("tr");
 
   const tdNome = document.createElement("td");
@@ -118,13 +118,13 @@ receitas.forEach((r, i) => {
 });
 
 function atualizarResultados(index, qtdDesejada) {
-  const receita = receitas[index];
+  const material = materiais[index];
   const resultado = {};
 
-  const multiplicador = qtdDesejada / receita.producao;
+  const multiplicador = qtdDesejada / material.assaltos;
 
-  for (const ingrediente in receita.ingredientes) {
-    resultado[ingrediente] = Math.ceil(receita.ingredientes[ingrediente] * multiplicador);
+  for (const material in receita.materiais) {
+    resultado[material] = Math.ceil(receita.materiais[material] * multiplicador);
   }
 
   const td = document.getElementById("res-" + index);
