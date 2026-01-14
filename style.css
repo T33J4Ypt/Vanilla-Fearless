@@ -71,7 +71,7 @@ a.button-link {
 
 button:hover,
 a.button-link:hover {
-  transform: scale(1.25);
+  transform: scale(1.05);
   background-color: #ffee55;
 }
 
