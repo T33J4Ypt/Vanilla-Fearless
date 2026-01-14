@@ -132,4 +132,3 @@ function atualizarResultados(index, qtdDesejada) {
     .map(([ing, qtd]) => `${qtd} ${ing}`)
     .join("<br>");
 }
- 
