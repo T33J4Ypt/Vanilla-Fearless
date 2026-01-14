@@ -57,7 +57,7 @@ button,
 a.button-link {
   padding: 10px 20px;
   border-radius: 10px;
-  font-size: 1rem;
+  font-size: 2rem;
   cursor: pointer;
   box-shadow: 2px 2px 6px #000;
   transition: transform 0.2s ease;
