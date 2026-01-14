@@ -41,7 +41,7 @@ const receitas = [
     }
   },
   {
-    nome: "Signal Booster",
+    nome: "Signal Booster (DigiScanner)",
     producao: 1,
     ingredientes: {
       "Alumínio": 5,
