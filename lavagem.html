@@ -14,7 +14,7 @@
       <td><input type="number" id="dinheiroSujo" placeholder="Ex: 10000"></td>
     </tr>
     <tr>
-      <th>% que queres receber no total (Tu + Máquina)</th>
+      <th>% a ser aplicada</th>
       <td><input type="number" id="percentagemEntrega" placeholder="Ex: 20"></td>
     </tr>
   </table>
@@ -83,7 +83,7 @@
       // Mostrar resultados formatados
       document.getElementById("resultado").innerHTML = `
         <br>
-        <strong>Dinheiro limpo:</strong> €${valorVoce.toFixed(2)}<br>
+        <strong>Dinheiro limpo:</strong> €${valorVoce.toFixed(2)}<br> <style="font-size:22px;color: #ffff99; font-weight: bold; text-decoration: underline;-webkit-text-stroke:0.5px #000;">
         <strong>Valor entregue ao cliente:</strong> €${valorEntregue.toFixed(2)}
       `;
     }
