@@ -8,36 +8,11 @@ const receitas = [
     }
   },
   {
-    nome: "Drill",
-    producao: 1,
-    ingredientes: {
-      "Aço": 10,
-      "Ferro": 50
-    }
-  },
-  {
     nome: "Small C4",
     producao: 1,
     ingredientes: {
       "Pólvora": 10,
       "Plástico": 20
-    }
-  },
-  {
-    nome: "Hack Device",
-    producao: 1,
-    ingredientes: {
-      "Alumínio": 5,
-      "Plástico": 10
-    }
-  },
-  {
-    nome: "Gas Tank",
-    producao: 1,
-    ingredientes: {
-      "Plástico": 10,
-      "Enxofre": 10,
-      "Ferro": 25
     }
   },
   {
@@ -54,21 +29,6 @@ const receitas = [
     ingredientes: {
       "Carvão": 10,
       "Ferro": 20
-    }
-  },
-  {
-    nome: "Safe Cracker",
-    producao: 1,
-    ingredientes: {
-      "Ferro": 5,
-      "Aço": 30
-    }
-  },
-  {
-    nome: "Glass Cutter",
-    producao: 1,
-    ingredientes: {
-      "Aço": 40
     }
   },
   {
