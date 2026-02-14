@@ -83,11 +83,8 @@
       // Mostrar resultados formatados
       document.getElementById("resultado").innerHTML = `
         <br>
-        <strong>Dinheiro sujo:</strong> €${dinheiroSujo.toFixed(2)}<br>
-        <strong>Máquina (5%):</strong> €${valorMaquina.toFixed(2)}<br>
-        <strong>Você (resto dos ${percentagemDesejada}%):</strong> €${valorVoce.toFixed(2)}<br>
-        <strong>Total que você e a máquina recebem:</strong> €${valorTotalRecebido.toFixed(2)} (${percentagemDesejada}%)<br>
-        <strong>Valor entregue a quem trouxe:</strong> €${valorEntregue.toFixed(2)} (${(100 - percentagemDesejada).toFixed(2)}%)
+        <strong>Dinheiro limpo (resto dos ${percentagemDesejada}%):</strong> €${valorVoce.toFixed(2)}<br>
+        <strong>Valor entregue ao cliente:</strong> €${valorEntregue.toFixed(2)} (${(100 - percentagemDesejada).toFixed(2)}%)
       `;
     }
   </script>
